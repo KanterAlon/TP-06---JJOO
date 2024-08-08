@@ -15,7 +15,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        List<Deportista> deportistas = BD.LevantarDeportistas();
+        return View(deportistas);
     }
 
     public IActionResult Privacy()
@@ -28,4 +29,5 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
 }

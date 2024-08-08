@@ -1,8 +1,36 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model List<Deportista>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Deportistas</title>
+</head>
+<body>
+    <h1>Lista de Deportistas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Apellido</th>
+                <th>Nombre</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Foto</th>
+                <th>País</th>
+                <th>Deporte</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var deportista in Model)
+            {
+                <tr>
+                    <td>@deportista.Apellido</td>
+                    <td>@deportista.Nombre</td>
+                    <td>@deportista.FechaNacimiento.ToShortDateString()</td>
+                    <td><img src="@deportista.Foto" alt="@deportista.Nombre" width="100" /></td>
+                    <td>@deportista.IdPais</td> <!-- Aquí podrías hacer una consulta adicional para obtener el nombre del país -->
+                    <td>@deportista.IdDeporte</td> <!-- Aquí podrías hacer una consulta adicional para obtener el nombre del deporte -->
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
