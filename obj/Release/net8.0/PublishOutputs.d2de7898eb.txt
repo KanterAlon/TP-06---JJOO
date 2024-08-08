@@ -1,0 +1,14 @@
+C:\Users\kante\Downloads\TP06-JJOO\out\TP06-JJOO.exe
+C:\Users\kante\Downloads\TP06-JJOO\out\appsettings.Development.json
+C:\Users\kante\Downloads\TP06-JJOO\out\appsettings.json
+C:\Users\kante\Downloads\TP06-JJOO\out\TP06-JJOO.dll
+C:\Users\kante\Downloads\TP06-JJOO\out\TP06-JJOO.deps.json
+C:\Users\kante\Downloads\TP06-JJOO\out\TP06-JJOO.runtimeconfig.json
+C:\Users\kante\Downloads\TP06-JJOO\out\TP06-JJOO.pdb
+C:\Users\kante\Downloads\TP06-JJOO\out\Dapper.dll
+C:\Users\kante\Downloads\TP06-JJOO\out\System.Data.SqlClient.dll
+C:\Users\kante\Downloads\TP06-JJOO\out\runtimes\win-arm64\native\sni.dll
+C:\Users\kante\Downloads\TP06-JJOO\out\runtimes\win-x64\native\sni.dll
+C:\Users\kante\Downloads\TP06-JJOO\out\runtimes\win-x86\native\sni.dll
+C:\Users\kante\Downloads\TP06-JJOO\out\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\kante\Downloads\TP06-JJOO\out\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

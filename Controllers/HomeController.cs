@@ -15,8 +15,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        List<Deportista> deportistas = BD.LevantarDeportistas();
-        return View(deportistas);
+        return View();
     }
 
     public IActionResult Privacy()
