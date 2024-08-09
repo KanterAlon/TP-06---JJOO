@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\img\\jjoo-banner.png"
     },
     {
+      "Id": "C:\\Users\\95320323\\TP06-JJOO\\wwwroot\\img\\jjoo-logo.png",
+      "PackagePath": "staticwebassets\\img\\jjoo-logo.png"
+    },
+    {
       "Id": "C:\\Users\\95320323\\TP06-JJOO\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

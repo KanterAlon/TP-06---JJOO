@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Q58UaJl6+t7zSCuATkPr2aLuPKPC5JDgv5I67dukXW4=",
+  "Hash": "PwlWptTmctyaZRC9aNgQYIy0ndUBdfJlQk9vXXPf+98=",
   "Source": "TP06-JJOO",
   "BasePath": "_content/TP06-JJOO",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\jjoo-banner.png"
+    },
+    {
+      "Identity": "C:\\Users\\95320323\\TP06-JJOO\\wwwroot\\img\\jjoo-logo.png",
+      "SourceId": "TP06-JJOO",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\95320323\\TP06-JJOO\\wwwroot\\",
+      "BasePath": "_content/TP06-JJOO",
+      "RelativePath": "img/jjoo-logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\jjoo-logo.png"
     },
     {
       "Identity": "C:\\Users\\95320323\\TP06-JJOO\\wwwroot\\js\\site.js",
