@@ -44,57 +44,53 @@ public class HomeController : Controller
     }
 
     public IActionResult VerDetalleDeporte(int idDeporte)
-{
-    var deporte = BD.VerInfoDeporte(idDeporte);
-    var deportistas = BD.ListarDeportistas(idDeporte);
-    ViewBag.Deporte = deporte;
-    ViewBag.Deportistas = deportistas;
-    return View();
-}
+    {
+        var deporte = BD.VerInfoDeporte(idDeporte);
+        var deportistas = BD.ListarDeportistas(idDeporte);
+        ViewBag.Deporte = deporte;
+        ViewBag.Deportistas = deportistas;
+        return View();
+    }
 
-public IActionResult VerDetallePais(int idPais)
-{
-    var pais = BD.VerInfoPais(idPais);
-    var deportistas = BD.ListarDeportistasPorPais(idPais);
-    ViewBag.Pais = pais;
-    ViewBag.Deportistas = deportistas;
-    return View();
-}
-public IActionResult VerDetalleDeportista(int idDeportista)
-{
-    var deportista = BD.VerInfoDeportista(idDeportista);
-    ViewBag.Deportista = deportista;
-    return View();
-}
+    public IActionResult VerDetallePais(int idPais)
+    {
+        var pais = BD.VerInfoPais(idPais);
+        var deportistas = BD.ListarDeportistasPorPais(idPais);
+        ViewBag.Pais = pais;
+        ViewBag.Deportistas = deportistas;
+        return View();
+    }
+    public IActionResult VerDetalleDeportista(int idDeportista)
+    {
+        var deportista = BD.VerInfoDeportista(idDeportista);
+        ViewBag.Deportista = deportista;
+        return View();
+    }
 
-public IActionResult AgregarDeportista()
-{
-    var paises = BD.ListarPaises();
-    var deportes = BD.ListarDeportes();
-    ViewBag.Paises = paises;
-    ViewBag.Deportes = deportes;
-    return View();
-}
+    public IActionResult AgregarDeportista()
+    {
+        var paises = BD.ListarPaises();
+        var deportes = BD.ListarDeportes();
+        ViewBag.Paises = paises;
+        ViewBag.Deportes = deportes;
+        return View();
+    }
 
-[HttpPost]
-public IActionResult GuardarDeportista(Deportista dep)
-{
-    BD.AgregarDeportista(dep);
-    return RedirectToAction("Index");
-}
+    [HttpPost]
+    public IActionResult GuardarDeportista(Deportista dep)
+    {
+        BD.AgregarDeportista(dep);
+        return RedirectToAction("Index");
+    }
 
-public IActionResult EliminarDeportista(int idCandidato)
-{
-    BD.EliminarDeportista(idCandidato);
-    return RedirectToAction("Index");
-}
+    public IActionResult EliminarDeportista(int idCandidato)
+    {
+        BD.EliminarDeportista(idCandidato);
+        return RedirectToAction("Index");
+    }
 
-public IActionResult Creditos()
-{
-    return View();
-}
-
-
-
-
+    public IActionResult Creditos()
+    {
+        return View();
+    }
 }

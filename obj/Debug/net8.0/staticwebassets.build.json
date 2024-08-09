@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0LoJZIzI4SAeE6IsEDpRDlZ/qG4IakMmcCl46AOEcWA=",
+  "Hash": "rxNvgPII4SBfvwTeeWWFm43pbMCHkH+yTJ0SIsFFVIM=",
   "Source": "TP06-JJOO",
   "BasePath": "_content/TP06-JJOO",
   "Mode": "Default",
@@ -16,44 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\95320323\\Downloads\\TP06-JJOO\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TP06-JJOO.styles.css",
-      "SourceId": "TP06-JJOO",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\95320323\\Downloads\\TP06-JJOO\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/TP06-JJOO",
-      "RelativePath": "TP06-JJOO.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\95320323\\Downloads\\TP06-JJOO\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TP06-JJOO.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\95320323\\Downloads\\TP06-JJOO\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TP06-JJOO.bundle.scp.css",
-      "SourceId": "TP06-JJOO",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\95320323\\Downloads\\TP06-JJOO\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/TP06-JJOO",
-      "RelativePath": "TP06-JJOO.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\95320323\\Downloads\\TP06-JJOO\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TP06-JJOO.bundle.scp.css"
-    },
     {
       "Identity": "C:\\Users\\95320323\\Downloads\\TP06-JJOO\\wwwroot\\css\\site.css",
       "SourceId": "TP06-JJOO",

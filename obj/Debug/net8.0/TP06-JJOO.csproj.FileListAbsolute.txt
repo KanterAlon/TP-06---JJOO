@@ -29,9 +29,7 @@ C:\Users\95320323\Downloads\TP06-JJOO\obj\Debug\net8.0\staticwebassets\msbuild.b
 C:\Users\95320323\Downloads\TP06-JJOO\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.TP06-JJOO.props
 C:\Users\95320323\Downloads\TP06-JJOO\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.TP06-JJOO.props
 C:\Users\95320323\Downloads\TP06-JJOO\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\95320323\Downloads\TP06-JJOO\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\95320323\Downloads\TP06-JJOO\obj\Debug\net8.0\scopedcss\bundle\TP06-JJOO.styles.css
-C:\Users\95320323\Downloads\TP06-JJOO\obj\Debug\net8.0\scopedcss\projectbundle\TP06-JJOO.bundle.scp.css
 C:\Users\95320323\Downloads\TP06-JJOO\obj\Debug\net8.0\TP06-JJOO.csproj.Up2Date
 C:\Users\95320323\Downloads\TP06-JJOO\obj\Debug\net8.0\TP06-JJOO.dll
 C:\Users\95320323\Downloads\TP06-JJOO\obj\Debug\net8.0\refint\TP06-JJOO.dll

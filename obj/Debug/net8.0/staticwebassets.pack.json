@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\95320323\\Downloads\\TP06-JJOO\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TP06-JJOO.bundle.scp.css",
-      "PackagePath": "staticwebassets\\TP06-JJOO.bundle.scp.css"
-    },
-    {
       "Id": "C:\\Users\\95320323\\Downloads\\TP06-JJOO\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
