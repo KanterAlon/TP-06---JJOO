@@ -18,4 +18,6 @@ public class Deportista
         IdPais = idPais;
         IdDeporte = idDeporte;
     }
+
+    public Deportista() { }
 }

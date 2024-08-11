@@ -76,12 +76,14 @@ public class HomeController : Controller
         return View();
     }
 
+
     [HttpPost]
     public IActionResult GuardarDeportista(Deportista dep)
     {
         BD.AgregarDeportista(dep);
         return RedirectToAction("Index");
     }
+
 
     public IActionResult EliminarDeportista(int idCandidato)
     {

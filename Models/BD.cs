@@ -8,13 +8,15 @@ public class BD
     private static string _connectionString = @"Server=localhost\SQLEXPRESS;Database=JJOO;Trusted_Connection=True;";
 
     public static void AgregarDeportista(Deportista dep)
+{
+    using (SqlConnection db = new SqlConnection(_connectionString))
     {
-        using (SqlConnection db = new SqlConnection(_connectionString))
-        {
-            string sql = "INSERT INTO Deportistas (Nombre, Edad, IdDeporte, IdPais) VALUES (@Nombre, @Edad, @IdDeporte, @IdPais)";
-            db.Execute(sql, dep);
-        }
+        string sql = "INSERT INTO Deportistas (Apellido, Nombre, FechaNacimiento, Foto, IdPais, IdDeporte) " +
+                     "VALUES (@Apellido, @Nombre, @FechaNacimiento, @Foto, @IdPais, @IdDeporte)";
+        db.Execute(sql, dep);
     }
+}
+
 
     public static void EliminarDeportista(int idDeportista)
     {
