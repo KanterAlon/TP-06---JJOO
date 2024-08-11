@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kante\\TP06-JJOO\\TP06-JJOO.csproj": {}
+    "C:\\Users\\kante\\Downloads\\TP06-JJOO\\TP06-JJOO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kante\\TP06-JJOO\\TP06-JJOO.csproj": {
+    "C:\\Users\\kante\\Downloads\\TP06-JJOO\\TP06-JJOO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kante\\TP06-JJOO\\TP06-JJOO.csproj",
+        "projectUniqueName": "C:\\Users\\kante\\Downloads\\TP06-JJOO\\TP06-JJOO.csproj",
         "projectName": "TP06-JJOO",
-        "projectPath": "C:\\Users\\kante\\TP06-JJOO\\TP06-JJOO.csproj",
+        "projectPath": "C:\\Users\\kante\\Downloads\\TP06-JJOO\\TP06-JJOO.csproj",
         "packagesPath": "C:\\Users\\kante\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kante\\TP06-JJOO\\obj\\",
+        "outputPath": "C:\\Users\\kante\\Downloads\\TP06-JJOO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kante\\AppData\\Roaming\\NuGet\\NuGet.Config"
