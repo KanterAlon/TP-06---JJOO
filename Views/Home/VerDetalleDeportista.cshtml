@@ -1,0 +1,14 @@
+@{
+    ViewBag.Title = ViewBag.Deportista.Nombre + " " + ViewBag.Deportista.Apellido;
+    var deportista = ViewBag.Deportista as Deportista;
+}
+
+<section class="deportista-detalle">
+    <div class="deportista-info">
+        <h2>@deportista.Nombre @deportista.Apellido</h2>
+        <img src="@deportista.Foto" alt="Foto de @deportista.Nombre @deportista.Apellido" class="deportista-foto">
+        <p>Fecha de Nacimiento: @deportista.FechaNacimiento.ToString("dd/MM/yyyy")</p>
+        <p>Deporte: <a href="@Url.Action("VerDetalleDeporte", "Home", new { idDeporte = deportista.IdDeporte })">Ver Deporte</a></p>
+        <p>País: <a href="@Url.Action("VerDetallePais", "Home", new { idPais = deportista.IdPais })">Ver País</a></p>
+    </div>
+</section>

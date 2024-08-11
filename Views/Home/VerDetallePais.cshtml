@@ -1,0 +1,32 @@
+@{
+    ViewBag.Title = ViewBag.Pais.Nombre;
+    var pais = ViewBag.Pais as Pais;
+    var deportistas = ViewBag.Deportistas as List<Deportista>;
+}
+
+<section class="pais-detalle">
+    <div class="pais-info">
+        <h2>@pais.Nombre</h2>
+        <img src="@pais.Bandera" alt="Bandera de @pais.Nombre" class="pais-bandera">
+        <p>Fecha de Fundación: @pais.FechaFundacion.ToString("dd/MM/yyyy")</p>
+    </div>
+
+    <section class="deportistas-list">
+        <h3>Deportistas de @pais.Nombre</h3>
+        <div class="cards-container">
+            @foreach (var deportista in deportistas)
+            {
+                <div class="card">
+                    <img src="@deportista.Foto" alt="Foto de @deportista.Nombre @deportista.Apellido" class="card-img">
+                    <div class="card-content">
+                        <h4>@deportista.Nombre @deportista.Apellido</h4>
+                        <p>Fecha de Nacimiento: @deportista.FechaNacimiento.ToString("dd/MM/yyyy")</p>
+                        <a href="@Url.Action("VerDetalleDeportista", "Home", new { idDeportista = deportista.IdDeportista })" class="btn-detalle">
+                            Ver Detalles
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+</section>

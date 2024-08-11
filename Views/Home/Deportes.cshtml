@@ -1,0 +1,18 @@
+@{
+    ViewBag.Title = "Deportes";
+    var deportes = ViewBag.Deportes as List<Deporte>;
+}
+
+<section class="deportes-list">
+    <h2>Deportes en los Juegos Olímpicos</h2>
+    <ul>
+        @foreach (var deporte in deportes)
+        {
+            <li>
+                <a href="@Url.Action("VerDetalleDeporte", "Home", new { idDeporte = deporte.IdDeporte })">
+                    @deporte.Nombre
+                </a>
+            </li>
+        }
+    </ul>
+</section>

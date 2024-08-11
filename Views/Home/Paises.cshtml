@@ -1,0 +1,18 @@
+@{
+    ViewBag.Title = "Países";
+    var paises = ViewBag.Paises as List<Pais>;
+}
+
+<section class="paises-list">
+    <h2>Países Participantes en los Juegos Olímpicos</h2>
+    <ul>
+        @foreach (var pais in paises)
+        {
+            <li>
+                <a href="@Url.Action("VerDetallePais", "Home", new { idPais = pais.IdPais })">
+                    @pais.Nombre
+                </a>
+            </li>
+        }
+    </ul>
+</section>
