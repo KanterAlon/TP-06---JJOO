@@ -5,7 +5,9 @@ using System.Linq;
 
 public class BD
 {
-    private static string _connectionString = @"Server=localhost\SQLEXPRESS;Database=JJOO;Trusted_Connection=True;";
+    private static string _connectionString = @"Server=186.19.182.109\SQLEXPRESS,1433;Database=JJOO;User Id=sa;Password=barpetalon10";
+
+    //private static string _connectionString = @"Server=(localdb)\mssqllocaldb;Database=JJOO;Trusted_Connection=True;";
 
     public static void AgregarDeportista(Deportista dep)
 {
