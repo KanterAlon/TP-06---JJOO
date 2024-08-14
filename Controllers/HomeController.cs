@@ -29,24 +29,23 @@ public class HomeController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 
-
-        public IActionResult Deportes()
+    public IActionResult Deportes()
     {
-        var listaDeportes = BD.ListarDeportes();
+        var listaDeportes = Deporte.ListarDeportes();
         ViewBag.Deportes = listaDeportes;
         return View();
     }
-        public IActionResult Paises()
+    public IActionResult Paises()
     {
-        var listaPaises = BD.ListarPaises();
+        var listaPaises = Pais.ListarPaises();
         ViewBag.Paises = listaPaises;
         return View();
     }
 
     public IActionResult VerDetalleDeporte(int idDeporte)
     {
-        var deporte = BD.VerInfoDeporte(idDeporte);
-        var deportistas = BD.ListarDeportistas(idDeporte);
+        var deporte = Deporte.VerInfoDeporte(idDeporte);
+        var deportistas = Deportista.ListarDeportistas(idDeporte);
         ViewBag.Deporte = deporte;
         ViewBag.Deportistas = deportistas;
         return View();
@@ -54,15 +53,15 @@ public class HomeController : Controller
 
     public IActionResult VerDetallePais(int idPais)
     {
-        var pais = BD.VerInfoPais(idPais);
-        var deportistas = BD.ListarDeportistasPorPais(idPais);
+        var pais = Pais.VerInfoPais(idPais);
+        var deportistas = Pais.ListarDeportistasPorPais(idPais);
         ViewBag.Pais = pais;
         ViewBag.Deportistas = deportistas;
         return View();
     }
     public IActionResult VerDetalleDeportista(int idDeportista)
     {
-        var deportista = BD.VerInfoDeportista(idDeportista);
+        var deportista = Deportista.VerInfoDeportista(idDeportista);
         ViewBag.Deportista = deportista;
         return View();
     }
@@ -75,7 +74,6 @@ public class HomeController : Controller
         ViewBag.Deportes = deportes;
         return View();
     }
-
 
     [HttpPost]
     public IActionResult GuardarDeportista(Deportista dep)

@@ -14,4 +14,21 @@ public class Pais
         Bandera = bandera;
         FechaFundacion = fechaFundacion;
     }
+    public static List<Pais> ListarPaises()
+    {   
+        var listaPaises = BD.ListarPaises();
+        return listaPaises.ToList();
+    }
+
+     public static List<Pais> VerInfoPais(int IdPais)
+    {   
+        var pais = BD.VerInfoPais(IdPais);
+        return pais();
+    }   
+
+    public static List<Deportista> ListarDeportistasPorPais(int IdPais)
+    {   
+        var listaDeportistasPorPais = BD.ListarDeportistasPorPais(IdPais);
+        return listaDeportistasPorPais.ToList();
+    }   
 }

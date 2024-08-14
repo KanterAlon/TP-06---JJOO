@@ -20,4 +20,16 @@ public class Deportista
     }
 
     public Deportista() { }
+
+    public static Deportista VerInfoDeportista(int idDeportista)
+    {
+        var deportista = BD.VerInfoDeportista(idDeportista);
+        return deportista;
+    }
+
+    public static List<Deportista> ListarDeportistas(int idDeportista) {
+        var listaDeportistas = BD.ListarDeportistas(idDeportista);
+        return listaDeportistas.ToList();
+    }
+    
 }

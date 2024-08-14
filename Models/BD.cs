@@ -5,19 +5,19 @@ using System.Linq;
 
 public class BD
 {
-    private static string _connectionString = @"Server=186.19.182.109\SQLEXPRESS,1433;Database=JJOO;User Id=sa;Password=barpetalon10";
+    //private static string _connectionString = @"Server=186.19.182.109\SQLEXPRESS,1433;Database=JJOO;User Id=sa;Password=barpetalon10";
 
-    //private static string _connectionString = @"Server=(localdb)\mssqllocaldb;Database=JJOO;Trusted_Connection=True;";
+    public static string _connectionString = @"Server=localhost;Database=JJOO;Trusted_Connection=True;";
 
     public static void AgregarDeportista(Deportista dep)
-{
-    using (SqlConnection db = new SqlConnection(_connectionString))
     {
-        string sql = "INSERT INTO Deportistas (Apellido, Nombre, FechaNacimiento, Foto, IdPais, IdDeporte) " +
-                     "VALUES (@Apellido, @Nombre, @FechaNacimiento, @Foto, @IdPais, @IdDeporte)";
-        db.Execute(sql, dep);
+        using (SqlConnection db = new SqlConnection(_connectionString))
+        {
+            string sql = "INSERT INTO Deportistas (Apellido, Nombre, FechaNacimiento, Foto, IdPais, IdDeporte) " +
+                        "VALUES (@Apellido, @Nombre, @FechaNacimiento, @Foto, @IdPais, @IdDeporte)";
+            db.Execute(sql, dep);
+        }
     }
-}
 
 
     public static void EliminarDeportista(int idDeportista)

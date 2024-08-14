@@ -12,4 +12,16 @@ public class Deporte
         Nombre = nombre;
         Foto = foto;
     }
+    public static List<Deporte> ListarDeportes()
+    {   
+        var listaDeportes = BD.ListarDeportes();
+        return listaDeportes.ToList();
+    }
+
+    public static Deporte VerInfoDeporte(int idDeporte)
+    {
+        var deporte = BD.VerInfoDeporte(idDeporte);
+        return deporte;
+    }
+
 }
