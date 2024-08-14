@@ -20,10 +20,10 @@ public class Pais
         return listaPaises.ToList();
     }
 
-     public static List<Pais> VerInfoPais(int IdPais)
+     public static Pais VerInfoPais(int IdPais)
     {   
         var pais = BD.VerInfoPais(IdPais);
-        return pais();
+        return pais;
     }   
 
     public static List<Deportista> ListarDeportistasPorPais(int IdPais)

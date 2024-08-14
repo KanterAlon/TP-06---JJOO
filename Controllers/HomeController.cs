@@ -68,26 +68,34 @@ public class HomeController : Controller
 
     public IActionResult AgregarDeportista()
     {
-        var paises = BD.ListarPaises();
-        var deportes = BD.ListarDeportes();
-        ViewBag.Paises = paises;
-        ViewBag.Deportes = deportes;
+        var listaPaises = Pais.ListarPaises();
+        var listaDeportes = Deporte.ListarDeportes();
+        ViewBag.Paises = listaPaises;
+        ViewBag.Deportes = listaDeportes;
         return View();
     }
 
     [HttpPost]
     public IActionResult GuardarDeportista(Deportista dep)
     {
-        BD.AgregarDeportista(dep);
+        Deportista.AgregarDeportista(dep);
         return RedirectToAction("Index");
     }
 
 
-    public IActionResult EliminarDeportista(int idCandidato)
+    public IActionResult EliminarDeportista(int idDeportista)
     {
-        BD.EliminarDeportista(idCandidato);
-        return RedirectToAction("Index");
+        // Cargar el deportista con VerInfoDeportista y tomar el país
+        var deportista = Deportista.VerInfoDeportista(idDeportista);
+        int idPais = deportista.IdPais;
+
+        // Eliminar el deportista
+        Deportista.EliminarDeportista(idDeportista);
+
+        // Redireccionar al detalle del país
+        return RedirectToAction("VerDetallePais", "Home", new { idPais = idPais });
     }
+
 
     public IActionResult Creditos()
     {

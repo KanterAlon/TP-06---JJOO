@@ -20,7 +20,7 @@ public class Deportista
     }
 
     public Deportista() { }
-
+    
     public static Deportista VerInfoDeportista(int idDeportista)
     {
         var deportista = BD.VerInfoDeportista(idDeportista);
@@ -31,5 +31,14 @@ public class Deportista
         var listaDeportistas = BD.ListarDeportistas(idDeportista);
         return listaDeportistas.ToList();
     }
+    public static void AgregarDeportista(Deportista dep)
+    {
+        BD.AgregarDeportista(dep);
+    }
+    public static void EliminarDeportista(int idCandidato)
+    {
+        BD.EliminarDeportista(idCandidato);
+    }
+
     
 }

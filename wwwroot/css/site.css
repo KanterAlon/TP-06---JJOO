@@ -64,6 +64,7 @@ header {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 footer {
@@ -181,6 +182,23 @@ footer {
 .deportistas-list h3 {
   font-size: 28px;
   margin-bottom: 20px;
+}
+
+.btn-eliminar {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: .8rem;
+  right: .4rem;
+}
+
+.btn-eliminar img {
+  width: 30px;
+}
+
+.btn-eliminar:hover {
+  opacity: .8;
+  cursor: pointer;
 }
 
 .cards-container {
