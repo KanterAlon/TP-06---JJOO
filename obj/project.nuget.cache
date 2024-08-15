@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F287EUh2zOghduhkYn9BiLg7ijwK7Hg1k3sIrCbqaMYtz9VhHdfGV8pOXSSuXcH1WwCrPzXvm4dZSZ8XwiLjEA==",
+  "dgSpecHash": "eFGIu+gDWPTX042FGhVhQGc3a/F1ex8z4LXi48y2CmW5q/t43pbwa8ktZSfi+2spjQafMWFJtTKtQNz+MRQimA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\95320323\\Downloads\\TP06-JJOO\\TP06-JJOO.csproj",
+  "projectFilePath": "Z:\\Taller de Programacion\\Nuevo\\TP06-JJOO\\TP06-JJOO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\95320323\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\95320323\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

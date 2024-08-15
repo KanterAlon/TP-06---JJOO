@@ -8,6 +8,7 @@ public class Deportista
     public int IdPais { get; set; }
     public int IdDeporte { get; set; }
 
+
     public Deportista(int idDeportista, string apellido, string nombre, DateTime fechaNacimiento, string foto, int idPais, int idDeporte)
     {
         IdDeportista = idDeportista;

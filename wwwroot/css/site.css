@@ -301,6 +301,121 @@ footer {
   color: #333;
 }
 
-.equipo-lista strong {
-  color: #2980b9;
+/* Animación de fade-in y zoom-out para las secciones */
+.card, .about-site {
+  opacity: 0;
+  transform: translateX(-50px) scale(0.9);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.card.show, .about-site.show {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+/* Parallax y otras animaciones */
+.banner::before {
+  will-change: transform;
+  transition: transform 0.3s ease-out;
+}
+
+/* Loader de página */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1abc9c, #2980b9);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+  background-size: 400% 400%;
+  animation: GradientBackground 3s ease infinite;
+}
+
+@keyframes GradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Animación de texto principal */
+.banner-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  color: #f39c12;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #f39c12;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #f39c12; }
+}
+
+/* Partículas flotantes */
+.particle-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: float 5s ease-in-out infinite;
+  opacity: 0.6;
+  will-change: transform;
+}
+
+@keyframes float {
+  from { transform: translateY(0) rotate(0deg); }
+  to { transform: translateY(-500px) rotate(360deg); }
+}
+
+/* Botones con efecto de explosión */
+.btn-detalle, .btn-submit {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-detalle:hover::after, .btn-submit:hover::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%);
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0.6;
+  animation: explode 0.5s forwards;
+}
+
+@keyframes explode {
+  to {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0;
+  }
 }
