@@ -41,5 +41,6 @@ public class Deportista
         BD.EliminarDeportista(idCandidato);
     }
 
+
     
 }

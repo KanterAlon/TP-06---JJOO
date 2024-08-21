@@ -59,12 +59,6 @@ public class HomeController : Controller
         ViewBag.Deportistas = deportistas;
         return View();
     }
-    public IActionResult VerDetalleDeportista(int idDeportista)
-    {
-        var deportista = Deportista.VerInfoDeportista(idDeportista);
-        ViewBag.Deportista = deportista;
-        return View();
-    }
 
     public IActionResult AgregarDeportista()
     {
@@ -96,6 +90,36 @@ public class HomeController : Controller
         return RedirectToAction("VerDetallePais", "Home", new { idPais = idPais });
     }
 
+
+[HttpGet]
+    public IActionResult BuscarDeportistaPorNombre(string nombreDeportista)
+    {
+        // Busca el deportista por nombre completo o parcial
+        var deportista = BD.BuscarDeportistaPorNombre(nombreDeportista);
+        if (deportista != null)
+        {
+            // Si se encuentra, redirige a la vista de detalle del deportista
+            return RedirectToAction("VerDetalleDeportista", new { idDeportista = deportista.IdDeportista });
+        }
+        else
+        {
+            // Si no se encuentra, redirige al inicio con un mensaje de error
+            TempData["ErrorMessage"] = "Deportista no encontrado.";
+            return RedirectToAction("Index");
+        }
+    }
+
+    public IActionResult VerDetalleDeportista(int idDeportista)
+    {
+        var deportista = BD.VerInfoDeportista(idDeportista);
+        if (deportista == null)
+        {
+            TempData["ErrorMessage"] = "Deportista no encontrado.";
+            return RedirectToAction("Index");
+        }
+        ViewBag.Deportista = deportista;
+        return View();
+    }
 
     public IActionResult Creditos()
     {

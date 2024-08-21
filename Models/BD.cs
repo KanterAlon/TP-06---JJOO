@@ -69,6 +69,19 @@ public class BD
         }
     }
 
+public static Deportista BuscarDeportistaPorNombre(string nombreDeportista)
+{
+    using (SqlConnection db = new SqlConnection(_connectionString))
+    {
+        string sql = "SELECT * FROM Deportistas WHERE CONCAT(Nombre, ' ', Apellido) LIKE @NombreDeportista";
+        return db.QueryFirstOrDefault<Deportista>(sql, new { NombreDeportista = "%" + nombreDeportista + "%" });
+    }
+}
+
+
+
+
+
     public static List<Deportista> ListarDeportistas(int idDeporte)
     {
         using (SqlConnection db = new SqlConnection(_connectionString))

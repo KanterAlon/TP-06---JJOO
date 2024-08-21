@@ -15,3 +15,14 @@
         <p>Este sitio web está dedicado a brindarte toda la información que necesitas saber sobre los Juegos Olímpicos. Desde los orígenes históricos hasta las últimas competencias, puedes descubrir los diferentes deportes, conocer a los países participantes y agregar tus propios datos sobre los atletas.</p>
     </section>
 </section>
+
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <form class="d-flex" role="search" asp-action="BuscarDeportistaPorNombre" asp-controller="Home" method="get">
+      <input class="form-control me-2" type="search" name="nombreDeportista" placeholder="Search by Name" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
